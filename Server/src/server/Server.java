@@ -9,22 +9,18 @@ public class Server {
     private static int SERVER_PORT = 1234;
 
     private static double Calculate(int num1, char operator, int num2) {
-        double result = 0;
         switch (operator) {
             case '+':
-                result = num1 + num2;
-                break;
+                return num1 + num2;
             case '-':
-                result = num1 - num2;
-                break;
+                return num1 - num2;
             case '*':
-                result = num1 * num2;
-                break;
+                return num1 * num2;
             case '/':
-                result = 1.0 * num1 / num2;
-                break;
+                return 1.0 * num1 / num2;
+            default:
+                return num1 + num2;
         }
-        return result;
     }
 
     public static void Process() {
@@ -41,14 +37,11 @@ public class Server {
                 char operator = reader.readLine().charAt(0);
                 int num2 = Integer.parseInt(reader.readLine());
 
-                // Xử lý tính toán
+                // Xử lý tính toán và trả kết quả phản hồi về trong client
                 DataOutputStream sendToClient = new DataOutputStream(port.getOutputStream());
-                String str = num1 + " " + operator + " " + num2 + " = " + Calculate(num1, operator, num2) + "\n";
-
-                // Trả kết quả phản hồi về trong client
-                sendToClient.writeBytes(str);
+                sendToClient.writeBytes(Calculate(num1, operator, num2) + "\n");
             }
-        } catch (Exception e) {
+        } catch (Exception ex) {
             // TODO: handle exception
         }
     }
