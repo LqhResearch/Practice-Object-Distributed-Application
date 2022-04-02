@@ -1,0 +1,10 @@
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.csproj.AssemblyReference.cache
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.Properties.Resources.resources
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.csproj.GenerateResource.cache
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.csproj.CoreCompileInputs.cache
+D:\19TTA_LQH\BT_020422\Winform\bin\Debug\Winform.exe.config
+D:\19TTA_LQH\BT_020422\Winform\bin\Debug\Winform.exe
+D:\19TTA_LQH\BT_020422\Winform\bin\Debug\Winform.pdb
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.exe
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.pdb
+D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.Main.resources
