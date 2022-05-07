@@ -1,0 +1,7 @@
+D:\19TTA_LQH\Student-MS\WcfService\bin\WcfService.dll.config
+D:\19TTA_LQH\Student-MS\WcfService\bin\WcfService.dll
+D:\19TTA_LQH\Student-MS\WcfService\bin\WcfService.pdb
+D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
+D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.dll
+D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.pdb

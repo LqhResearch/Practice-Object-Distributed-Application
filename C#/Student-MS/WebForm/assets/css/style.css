@@ -1,0 +1,22 @@
+﻿body {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.header {
+    background: bottom / cover no-repeat url('/assets/img/bg.jpg');
+    text-align: center;
+    padding: 3rem;
+}
+
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
