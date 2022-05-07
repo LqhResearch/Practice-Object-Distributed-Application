@@ -85,4 +85,96 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="HienThiSinhVien">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HienThiSinhVienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="HienThiSinhVienResult" nillable="true" type="q4:ArrayOfSinhVien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimSinhVien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mssv" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimSinhVienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="TimSinhVienResult" nillable="true" type="q5:SinhVien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemSinhVien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mssv" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hoTen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queQuan" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="namSinh" type="xs:int" />
+        <xs:element minOccurs="0" name="gioiTinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemSinhVienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ThemSinhVienResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaSinhVien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mssv" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hoTen" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="queQuan" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="namSinh" type="xs:int" />
+        <xs:element minOccurs="0" name="gioiTinh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaSinhVienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SuaSinhVienResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaSinhVien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="mssv" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaSinhVienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XoaSinhVienResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemSinhVien">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemSinhVienResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="TimKiemSinhVienResult" nillable="true" type="q6:ArrayOfSinhVien" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

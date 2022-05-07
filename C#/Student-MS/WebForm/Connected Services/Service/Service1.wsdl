@@ -43,6 +43,42 @@
   <wsdl:message name="IService1_TimKiemLop_OutputMessage">
     <wsdl:part name="parameters" element="tns:TimKiemLopResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_HienThiSinhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:HienThiSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_HienThiSinhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:HienThiSinhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimSinhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimSinhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimSinhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemSinhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ThemSinhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemSinhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaSinhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaSinhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaSinhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaSinhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaSinhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaSinhVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemSinhVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemSinhVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemSinhVienResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="HienThiLop">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/HienThiLop" message="tns:IService1_HienThiLop_InputMessage" />
@@ -67,6 +103,30 @@
     <wsdl:operation name="TimKiemLop">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemLop" message="tns:IService1_TimKiemLop_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemLopResponse" message="tns:IService1_TimKiemLop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HienThiSinhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/HienThiSinhVien" message="tns:IService1_HienThiSinhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/HienThiSinhVienResponse" message="tns:IService1_HienThiSinhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimSinhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimSinhVien" message="tns:IService1_TimSinhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimSinhVienResponse" message="tns:IService1_TimSinhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemSinhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ThemSinhVien" message="tns:IService1_ThemSinhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThemSinhVienResponse" message="tns:IService1_ThemSinhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaSinhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SuaSinhVien" message="tns:IService1_SuaSinhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SuaSinhVienResponse" message="tns:IService1_SuaSinhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaSinhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/XoaSinhVien" message="tns:IService1_XoaSinhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/XoaSinhVienResponse" message="tns:IService1_XoaSinhVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemSinhVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemSinhVien" message="tns:IService1_TimKiemSinhVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemSinhVienResponse" message="tns:IService1_TimKiemSinhVien_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -118,6 +178,60 @@
     </wsdl:operation>
     <wsdl:operation name="TimKiemLop">
       <soap:operation soapAction="http://tempuri.org/IService1/TimKiemLop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HienThiSinhVien">
+      <soap:operation soapAction="http://tempuri.org/IService1/HienThiSinhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimSinhVien">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimSinhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemSinhVien">
+      <soap:operation soapAction="http://tempuri.org/IService1/ThemSinhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaSinhVien">
+      <soap:operation soapAction="http://tempuri.org/IService1/SuaSinhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaSinhVien">
+      <soap:operation soapAction="http://tempuri.org/IService1/XoaSinhVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemSinhVien">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemSinhVien" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

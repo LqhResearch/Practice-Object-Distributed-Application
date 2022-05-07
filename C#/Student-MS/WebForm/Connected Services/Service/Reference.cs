@@ -74,6 +74,147 @@ namespace WebForm.Service {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SinhVien", Namespace="http://schemas.datacontract.org/2004/07/WcfService")]
+    [System.SerializableAttribute()]
+    public partial class SinhVien : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GioiTinhField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HoTenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private WebForm.Service.Lop LopField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MSSVField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaLopField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> NamSinhField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string QueQuanField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string GioiTinh {
+            get {
+                return this.GioiTinhField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GioiTinhField, value) != true)) {
+                    this.GioiTinhField = value;
+                    this.RaisePropertyChanged("GioiTinh");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string HoTen {
+            get {
+                return this.HoTenField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HoTenField, value) != true)) {
+                    this.HoTenField = value;
+                    this.RaisePropertyChanged("HoTen");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public WebForm.Service.Lop Lop {
+            get {
+                return this.LopField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LopField, value) != true)) {
+                    this.LopField = value;
+                    this.RaisePropertyChanged("Lop");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MSSV {
+            get {
+                return this.MSSVField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MSSVField, value) != true)) {
+                    this.MSSVField = value;
+                    this.RaisePropertyChanged("MSSV");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLop {
+            get {
+                return this.MaLopField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLopField, value) != true)) {
+                    this.MaLopField = value;
+                    this.RaisePropertyChanged("MaLop");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> NamSinh {
+            get {
+                return this.NamSinhField;
+            }
+            set {
+                if ((this.NamSinhField.Equals(value) != true)) {
+                    this.NamSinhField = value;
+                    this.RaisePropertyChanged("NamSinh");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string QueQuan {
+            get {
+                return this.QueQuanField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QueQuanField, value) != true)) {
+                    this.QueQuanField = value;
+                    this.RaisePropertyChanged("QueQuan");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Service.IService1")]
     public interface IService1 {
@@ -113,6 +254,42 @@ namespace WebForm.Service {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimKiemLop", ReplyAction="http://tempuri.org/IService1/TimKiemLopResponse")]
         System.Threading.Tasks.Task<WebForm.Service.Lop[]> TimKiemLopAsync(string keyword);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/HienThiSinhVien", ReplyAction="http://tempuri.org/IService1/HienThiSinhVienResponse")]
+        WebForm.Service.SinhVien[] HienThiSinhVien();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/HienThiSinhVien", ReplyAction="http://tempuri.org/IService1/HienThiSinhVienResponse")]
+        System.Threading.Tasks.Task<WebForm.Service.SinhVien[]> HienThiSinhVienAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimSinhVien", ReplyAction="http://tempuri.org/IService1/TimSinhVienResponse")]
+        WebForm.Service.SinhVien TimSinhVien(string mssv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimSinhVien", ReplyAction="http://tempuri.org/IService1/TimSinhVienResponse")]
+        System.Threading.Tasks.Task<WebForm.Service.SinhVien> TimSinhVienAsync(string mssv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ThemSinhVien", ReplyAction="http://tempuri.org/IService1/ThemSinhVienResponse")]
+        bool ThemSinhVien(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ThemSinhVien", ReplyAction="http://tempuri.org/IService1/ThemSinhVienResponse")]
+        System.Threading.Tasks.Task<bool> ThemSinhVienAsync(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SuaSinhVien", ReplyAction="http://tempuri.org/IService1/SuaSinhVienResponse")]
+        bool SuaSinhVien(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SuaSinhVien", ReplyAction="http://tempuri.org/IService1/SuaSinhVienResponse")]
+        System.Threading.Tasks.Task<bool> SuaSinhVienAsync(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/XoaSinhVien", ReplyAction="http://tempuri.org/IService1/XoaSinhVienResponse")]
+        bool XoaSinhVien(string mssv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/XoaSinhVien", ReplyAction="http://tempuri.org/IService1/XoaSinhVienResponse")]
+        System.Threading.Tasks.Task<bool> XoaSinhVienAsync(string mssv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimKiemSinhVien", ReplyAction="http://tempuri.org/IService1/TimKiemSinhVienResponse")]
+        WebForm.Service.SinhVien[] TimKiemSinhVien(string keyword);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimKiemSinhVien", ReplyAction="http://tempuri.org/IService1/TimKiemSinhVienResponse")]
+        System.Threading.Tasks.Task<WebForm.Service.SinhVien[]> TimKiemSinhVienAsync(string keyword);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -188,6 +365,54 @@ namespace WebForm.Service {
         
         public System.Threading.Tasks.Task<WebForm.Service.Lop[]> TimKiemLopAsync(string keyword) {
             return base.Channel.TimKiemLopAsync(keyword);
+        }
+        
+        public WebForm.Service.SinhVien[] HienThiSinhVien() {
+            return base.Channel.HienThiSinhVien();
+        }
+        
+        public System.Threading.Tasks.Task<WebForm.Service.SinhVien[]> HienThiSinhVienAsync() {
+            return base.Channel.HienThiSinhVienAsync();
+        }
+        
+        public WebForm.Service.SinhVien TimSinhVien(string mssv) {
+            return base.Channel.TimSinhVien(mssv);
+        }
+        
+        public System.Threading.Tasks.Task<WebForm.Service.SinhVien> TimSinhVienAsync(string mssv) {
+            return base.Channel.TimSinhVienAsync(mssv);
+        }
+        
+        public bool ThemSinhVien(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop) {
+            return base.Channel.ThemSinhVien(mssv, hoTen, queQuan, namSinh, gioiTinh, maLop);
+        }
+        
+        public System.Threading.Tasks.Task<bool> ThemSinhVienAsync(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop) {
+            return base.Channel.ThemSinhVienAsync(mssv, hoTen, queQuan, namSinh, gioiTinh, maLop);
+        }
+        
+        public bool SuaSinhVien(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop) {
+            return base.Channel.SuaSinhVien(mssv, hoTen, queQuan, namSinh, gioiTinh, maLop);
+        }
+        
+        public System.Threading.Tasks.Task<bool> SuaSinhVienAsync(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop) {
+            return base.Channel.SuaSinhVienAsync(mssv, hoTen, queQuan, namSinh, gioiTinh, maLop);
+        }
+        
+        public bool XoaSinhVien(string mssv) {
+            return base.Channel.XoaSinhVien(mssv);
+        }
+        
+        public System.Threading.Tasks.Task<bool> XoaSinhVienAsync(string mssv) {
+            return base.Channel.XoaSinhVienAsync(mssv);
+        }
+        
+        public WebForm.Service.SinhVien[] TimKiemSinhVien(string keyword) {
+            return base.Channel.TimKiemSinhVien(keyword);
+        }
+        
+        public System.Threading.Tasks.Task<WebForm.Service.SinhVien[]> TimKiemSinhVienAsync(string keyword) {
+            return base.Channel.TimKiemSinhVienAsync(keyword);
         }
     }
 }

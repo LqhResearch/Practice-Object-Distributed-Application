@@ -19,7 +19,7 @@
                 </div>
                 <div class="d-flex-center">
                     <asp:Button ID="btnSubmit" CssClass="btn btn-success mx-1 fa" runat="server" Text="&#xf0c7; Lưu" OnClick="btnSubmit_Click" />
-                    <a class="btn btn-danger mx-1" href="/classes/list.aspx"><i class="fas fa-ban"></i> Hủy</a>
+                    <a class="btn btn-danger mx-1" href="/classes/list.aspx"><i class="fas fa-ban"></i>Hủy</a>
                 </div>
             </div>
         </div>

@@ -7,6 +7,9 @@ namespace WcfService
     [ServiceContract]
     public interface IService1
     {
+        /// <summary>
+        /// LOP
+        /// </summary>
         [OperationContract]
         List<Lop> HienThiLop();
 
@@ -24,6 +27,27 @@ namespace WcfService
 
         [OperationContract]
         List<Lop> TimKiemLop(string keyword);
+
+        /// <summary>
+        /// SINHVIEN
+        /// </summary>
+        [OperationContract]
+        List<SinhVien> HienThiSinhVien();
+
+        [OperationContract]
+        SinhVien TimSinhVien(string mssv);
+
+        [OperationContract]
+        bool ThemSinhVien(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop);
+
+        [OperationContract]
+        bool SuaSinhVien(string mssv, string hoTen, string queQuan, int namSinh, string gioiTinh, string maLop);
+
+        [OperationContract]
+        bool XoaSinhVien(string mssv);
+
+        [OperationContract]
+        List<SinhVien> TimKiemSinhVien(string keyword);
     }
 
 

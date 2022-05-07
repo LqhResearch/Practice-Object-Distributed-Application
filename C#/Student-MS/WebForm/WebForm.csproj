@@ -82,6 +82,9 @@
     <Content Include="classes\edit.aspx" />
     <Content Include="classes\list.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="students\add.aspx" />
+    <Content Include="students\edit.aspx" />
+    <Content Include="students\list.aspx" />
     <Content Include="Web.config" />
     <Content Include="Connected Services\Service\WebForm.Service.Lop.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -129,6 +132,27 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="students\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="students\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="students\list.aspx.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="students\list.aspx.designer.cs">
+      <DependentUpon>list.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\Service\Service1.wsdl" />
@@ -141,6 +165,9 @@
     <None Include="Connected Services\Service\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Connected Services\Service\WebForm.Service.SinhVien.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">

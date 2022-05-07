@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebForm.classes
+namespace WebForm.students
 {
     public partial class list : System.Web.UI.Page
     {
@@ -10,23 +10,23 @@ namespace WebForm.classes
         {
             if (!IsPostBack)
             {
-                if (Request.QueryString["del-malop"] != null)
+                if (Request.QueryString["del-mssv"] != null)
                 {
-                    string malop = Request.QueryString["del-malop"];
-                    if (!wcf.XoaLop(malop))
+                    string mssv = Request.QueryString["del-mssv"];
+                    if(!wcf.XoaSinhVien(mssv))
                         lblMessage.Text = "<div class='alert alert-danger' role='alert'>Xóa thất bại. Vui lòng kiểm tra lại.</div>";
                 }
 
-                rptClassesList.DataSource = wcf.HienThiLop();
-                rptClassesList.DataBind();
+                rptStudentsList.DataSource = wcf.HienThiSinhVien();
+                rptStudentsList.DataBind();
             }
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string keyword = txtSearch.Text;
-            rptClassesList.DataSource = wcf.TimKiemLop(keyword);
-            rptClassesList.DataBind();
+            rptStudentsList.DataSource = wcf.TimKiemSinhVien(keyword);
+            rptStudentsList.DataBind();
         }
     }
 }

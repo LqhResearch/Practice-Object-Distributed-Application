@@ -7,9 +7,9 @@ namespace WebForm.classes
         Service.Service1Client wcf = new Service.Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
-                if(Request.QueryString["malop"] != null)
+                if (Request.QueryString["malop"] != null)
                 {
                     string malop = Request.QueryString["malop"];
                     Service.Lop lop = wcf.TimLop(malop);

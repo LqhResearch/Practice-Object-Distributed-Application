@@ -28,3 +28,9 @@ CREATE TABLE SinhVien
 	FOREIGN KEY (MaLop) REFERENCES Lop(MaLop)
 )
 GO
+
+INSERT INTO SinhVien VALUES
+('110119004', N'Kiên Thanh Bình', N'Trà Vinh', 2001, N'Nam', 'DA19TTA'),
+('110119014', N'Lý Quốc Hưng', N'Trà Vinh', 2001, N'Nam', 'DA19TTA'),
+('110119063', N'Đỗ Thành Ý', N'Trà Vinh', 2001, N'Nam', 'DA19TTA')
+GO

@@ -13,4 +13,22 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Lop" nillable="true" type="tns:Lop" />
+  <xs:complexType name="ArrayOfSinhVien">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SinhVien" nillable="true" type="tns:SinhVien" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSinhVien" nillable="true" type="tns:ArrayOfSinhVien" />
+  <xs:complexType name="SinhVien">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GioiTinh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HoTen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lop" nillable="true" type="tns:Lop" />
+      <xs:element minOccurs="0" name="MSSV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamSinh" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="QueQuan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SinhVien" nillable="true" type="tns:SinhVien" />
 </xs:schema>

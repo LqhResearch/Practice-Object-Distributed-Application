@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebForm.classes
+namespace WebForm.students
 {
 
 
@@ -42,12 +42,12 @@ namespace WebForm.classes
         protected global::System.Web.UI.WebControls.Button btnSearch;
 
         /// <summary>
-        /// rptClassesList control.
+        /// rptStudentsList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptClassesList;
+        protected global::System.Web.UI.WebControls.Repeater rptStudentsList;
     }
 }
