@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:55086/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:55086/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:55086/Service.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_Count_Div2_NotDiv4_InputMessage">
+    <wsdl:part name="parameters" element="tns:Count_Div2_NotDiv4" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_Div2_NotDiv4_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Count_Div2_NotDiv4Response" />
+  </wsdl:message>
+  <wsdl:message name="IService_SortOddNumberDescending_InputMessage">
+    <wsdl:part name="parameters" element="tns:SortOddNumberDescending" />
+  </wsdl:message>
+  <wsdl:message name="IService_SortOddNumberDescending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SortOddNumberDescendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SumOddNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumOddNumber" />
+  </wsdl:message>
+  <wsdl:message name="IService_SumOddNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumOddNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_PrintArray_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintArray" />
+  </wsdl:message>
+  <wsdl:message name="IService_PrintArray_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_Div4_Div5_InputMessage">
+    <wsdl:part name="parameters" element="tns:Count_Div4_Div5" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_Div4_Div5_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Count_Div4_Div5Response" />
+  </wsdl:message>
+  <wsdl:message name="IService_SortAscending_InputMessage">
+    <wsdl:part name="parameters" element="tns:SortAscending" />
+  </wsdl:message>
+  <wsdl:message name="IService_SortAscending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SortAscendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Average_InputMessage">
+    <wsdl:part name="parameters" element="tns:Average" />
+  </wsdl:message>
+  <wsdl:message name="IService_Average_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AverageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_PrintOddNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:Count_PrintOddNumber" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_PrintOddNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Count_PrintOddNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_PrintEvenNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:Count_PrintEvenNumber" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_PrintEvenNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Count_PrintEvenNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Sort_OddNumberDescending_EvenNumberAscending_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sort_OddNumberDescending_EvenNumberAscending" />
+  </wsdl:message>
+  <wsdl:message name="IService_Sort_OddNumberDescending_EvenNumberAscending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sort_OddNumberDescending_EvenNumberAscendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_SumArray_InputMessage">
+    <wsdl:part name="parameters" element="tns:SumArray" />
+  </wsdl:message>
+  <wsdl:message name="IService_SumArray_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SumArrayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsPrime_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsPrime" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsPrime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsPrimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_Sum_Prime_InputMessage">
+    <wsdl:part name="parameters" element="tns:Count_Sum_Prime" />
+  </wsdl:message>
+  <wsdl:message name="IService_Count_Sum_Prime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Count_Sum_PrimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Sort_EvenNumberAscending_OddNumberDescending_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sort_EvenNumberAscending_OddNumberDescending" />
+  </wsdl:message>
+  <wsdl:message name="IService_Sort_EvenNumberAscending_OddNumberDescending_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Sort_EvenNumberAscending_OddNumberDescendingResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="Count_Div2_NotDiv4">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Count_Div2_NotDiv4" message="tns:IService_Count_Div2_NotDiv4_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Count_Div2_NotDiv4Response" message="tns:IService_Count_Div2_NotDiv4_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SortOddNumberDescending">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SortOddNumberDescending" message="tns:IService_SortOddNumberDescending_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SortOddNumberDescendingResponse" message="tns:IService_SortOddNumberDescending_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SumOddNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SumOddNumber" message="tns:IService_SumOddNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SumOddNumberResponse" message="tns:IService_SumOddNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintArray">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/PrintArray" message="tns:IService_PrintArray_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/PrintArrayResponse" message="tns:IService_PrintArray_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Count_Div4_Div5">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Count_Div4_Div5" message="tns:IService_Count_Div4_Div5_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Count_Div4_Div5Response" message="tns:IService_Count_Div4_Div5_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SortAscending">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SortAscending" message="tns:IService_SortAscending_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SortAscendingResponse" message="tns:IService_SortAscending_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Average">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Average" message="tns:IService_Average_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/AverageResponse" message="tns:IService_Average_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Count_PrintOddNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Count_PrintOddNumber" message="tns:IService_Count_PrintOddNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Count_PrintOddNumberResponse" message="tns:IService_Count_PrintOddNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Count_PrintEvenNumber">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Count_PrintEvenNumber" message="tns:IService_Count_PrintEvenNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Count_PrintEvenNumberResponse" message="tns:IService_Count_PrintEvenNumber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sort_OddNumberDescending_EvenNumberAscending">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Sort_OddNumberDescending_EvenNumberAscending" message="tns:IService_Sort_OddNumberDescending_EvenNumberAscending_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Sort_OddNumberDescending_EvenNumberAscendingResponse" message="tns:IService_Sort_OddNumberDescending_EvenNumberAscending_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SumArray">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/SumArray" message="tns:IService_SumArray_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SumArrayResponse" message="tns:IService_SumArray_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsPrime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IsPrime" message="tns:IService_IsPrime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IsPrimeResponse" message="tns:IService_IsPrime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Count_Sum_Prime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Count_Sum_Prime" message="tns:IService_Count_Sum_Prime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Count_Sum_PrimeResponse" message="tns:IService_Count_Sum_Prime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Sort_EvenNumberAscending_OddNumberDescending">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Sort_EvenNumberAscending_OddNumberDescending" message="tns:IService_Sort_EvenNumberAscending_OddNumberDescending_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Sort_EvenNumberAscending_OddNumberDescendingResponse" message="tns:IService_Sort_EvenNumberAscending_OddNumberDescending_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Count_Div2_NotDiv4">
+      <soap:operation soapAction="http://tempuri.org/IService/Count_Div2_NotDiv4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SortOddNumberDescending">
+      <soap:operation soapAction="http://tempuri.org/IService/SortOddNumberDescending" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SumOddNumber">
+      <soap:operation soapAction="http://tempuri.org/IService/SumOddNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintArray">
+      <soap:operation soapAction="http://tempuri.org/IService/PrintArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Count_Div4_Div5">
+      <soap:operation soapAction="http://tempuri.org/IService/Count_Div4_Div5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SortAscending">
+      <soap:operation soapAction="http://tempuri.org/IService/SortAscending" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Average">
+      <soap:operation soapAction="http://tempuri.org/IService/Average" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Count_PrintOddNumber">
+      <soap:operation soapAction="http://tempuri.org/IService/Count_PrintOddNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Count_PrintEvenNumber">
+      <soap:operation soapAction="http://tempuri.org/IService/Count_PrintEvenNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sort_OddNumberDescending_EvenNumberAscending">
+      <soap:operation soapAction="http://tempuri.org/IService/Sort_OddNumberDescending_EvenNumberAscending" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SumArray">
+      <soap:operation soapAction="http://tempuri.org/IService/SumArray" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsPrime">
+      <soap:operation soapAction="http://tempuri.org/IService/IsPrime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Count_Sum_Prime">
+      <soap:operation soapAction="http://tempuri.org/IService/Count_Sum_Prime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sort_EvenNumberAscending_OddNumberDescending">
+      <soap:operation soapAction="http://tempuri.org/IService/Sort_EvenNumberAscending_OddNumberDescending" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost:55086/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,13 @@
+A:\BT_160422\WinForm\bin\Debug\WinForm.exe.config
+A:\BT_160422\WinForm\bin\Debug\WinForm.exe
+A:\BT_160422\WinForm\bin\Debug\WinForm.pdb
+A:\BT_160422\WinForm\obj\Debug\WinForm.csproj.AssemblyReference.cache
+A:\BT_160422\WinForm\obj\Debug\WinForm.De_1.resources
+A:\BT_160422\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+A:\BT_160422\WinForm\obj\Debug\WinForm.csproj.GenerateResource.cache
+A:\BT_160422\WinForm\obj\Debug\WinForm.csproj.CoreCompileInputs.cache
+A:\BT_160422\WinForm\obj\Debug\WinForm.exe
+A:\BT_160422\WinForm\obj\Debug\WinForm.pdb
+A:\BT_160422\WinForm\obj\Debug\WinForm.De_2.resources
+A:\BT_160422\WinForm\obj\Debug\WinForm.De_3.resources
+A:\BT_160422\WinForm\obj\Debug\WinForm.De_4.resources
