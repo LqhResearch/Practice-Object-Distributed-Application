@@ -79,6 +79,7 @@
     <Content Include="assets\img\bg.jpg" />
     <Content Include="assets\img\favicon.png" />
     <Content Include="classes\add.aspx" />
+    <Content Include="classes\edit.aspx" />
     <Content Include="classes\list.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
@@ -93,6 +94,13 @@
     </Compile>
     <Compile Include="classes\add.aspx.designer.cs">
       <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classes\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="classes\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>

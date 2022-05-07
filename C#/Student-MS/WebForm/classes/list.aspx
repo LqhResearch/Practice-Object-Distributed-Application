@@ -9,10 +9,10 @@
             <h3 class="text-center text-danger">Danh sách lớp</h3>
 
             <div class="d-flex-between my-3">
-                <a class="btn btn-success" href="/classes/add.aspx"><i class="fas fa-plus"></i>Thêm</a>
+                <a class="btn btn-success" href="/classes/add.aspx"><i class="fas fa-plus"></i> Thêm</a>
                 <div class="input-group" style="width: 300px">
                     <asp:TextBox ID="txtSearch" CssClass="form-control" runat="server"></asp:TextBox>
-                    <asp:Button ID="btnSearch" CssClass="btn btn-info" runat="server" Text="Tìm" />
+                    <asp:Button ID="btnSearch" CssClass="btn btn-info fa" runat="server" Text="Tìm" OnClick="btnSearch_Click" />
                 </div>
             </div>
 

@@ -11,7 +11,19 @@ namespace WcfService
         List<Lop> HienThiLop();
 
         [OperationContract]
+        Lop TimLop(string maLop);
+
+        [OperationContract]
         bool ThemLop(string maLop, string tenLop);
+
+        [OperationContract]
+        bool SuaLop(string maLop, string tenLop);
+
+        [OperationContract]
+        bool XoaLop(string maLop);
+
+        [OperationContract]
+        List<Lop> TimKiemLop(string keyword);
     }
 
 

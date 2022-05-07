@@ -13,20 +13,60 @@
   <wsdl:message name="IService1_HienThiLop_OutputMessage">
     <wsdl:part name="parameters" element="tns:HienThiLopResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_TimLop_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimLop" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimLop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimLopResponse" />
+  </wsdl:message>
   <wsdl:message name="IService1_ThemLop_InputMessage">
     <wsdl:part name="parameters" element="tns:ThemLop" />
   </wsdl:message>
   <wsdl:message name="IService1_ThemLop_OutputMessage">
     <wsdl:part name="parameters" element="tns:ThemLopResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_SuaLop_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaLop" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SuaLop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaLopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaLop_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaLop" />
+  </wsdl:message>
+  <wsdl:message name="IService1_XoaLop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaLopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemLop_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemLop" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TimKiemLop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemLopResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="HienThiLop">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/HienThiLop" message="tns:IService1_HienThiLop_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/HienThiLopResponse" message="tns:IService1_HienThiLop_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="TimLop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimLop" message="tns:IService1_TimLop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimLopResponse" message="tns:IService1_TimLop_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="ThemLop">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/ThemLop" message="tns:IService1_ThemLop_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/ThemLopResponse" message="tns:IService1_ThemLop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaLop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SuaLop" message="tns:IService1_SuaLop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SuaLopResponse" message="tns:IService1_SuaLop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaLop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/XoaLop" message="tns:IService1_XoaLop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/XoaLopResponse" message="tns:IService1_XoaLop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemLop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TimKiemLop" message="tns:IService1_TimKiemLop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TimKiemLopResponse" message="tns:IService1_TimKiemLop_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -40,8 +80,44 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="TimLop">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimLop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ThemLop">
       <soap:operation soapAction="http://tempuri.org/IService1/ThemLop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaLop">
+      <soap:operation soapAction="http://tempuri.org/IService1/SuaLop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaLop">
+      <soap:operation soapAction="http://tempuri.org/IService1/XoaLop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemLop">
+      <soap:operation soapAction="http://tempuri.org/IService1/TimKiemLop" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

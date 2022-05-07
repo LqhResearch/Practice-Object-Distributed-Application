@@ -29,5 +29,47 @@ namespace WcfService
                 return false;
             }
         }
+
+        public Lop TimLop(string maLop)
+        {
+            return db.Lops.Where(l => l.MaLop == maLop).FirstOrDefault();
+        }
+
+        public List<Lop> TimKiemLop(string keyword)
+        {
+            return db.Lops.Where(l => l.MaLop == keyword || l.TenLop.Contains(keyword)).ToList();
+        }
+
+        public bool SuaLop(string maLop, string tenLop)
+        {
+            Lop l = TimLop(maLop);
+            l.TenLop = tenLop;
+
+            try
+            {
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool XoaLop(string maLop)
+        {
+            Lop l = TimLop(maLop);
+
+            try
+            {
+                db.Lops.DeleteOnSubmit(l);
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

@@ -13,6 +13,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="TimLop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimLopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="TimLopResult" nillable="true" type="q2:Lop" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ThemLop">
     <xs:complexType>
       <xs:sequence>
@@ -25,6 +39,49 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="ThemLopResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaLop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maLop" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SuaLopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SuaLopResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaLop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maLop" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaLopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XoaLopResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemLop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="keyword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemLopResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="TimKiemLopResult" nillable="true" type="q3:ArrayOfLop" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

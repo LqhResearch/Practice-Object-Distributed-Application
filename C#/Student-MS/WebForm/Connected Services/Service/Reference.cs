@@ -84,11 +84,35 @@ namespace WebForm.Service {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/HienThiLop", ReplyAction="http://tempuri.org/IService1/HienThiLopResponse")]
         System.Threading.Tasks.Task<WebForm.Service.Lop[]> HienThiLopAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimLop", ReplyAction="http://tempuri.org/IService1/TimLopResponse")]
+        WebForm.Service.Lop TimLop(string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimLop", ReplyAction="http://tempuri.org/IService1/TimLopResponse")]
+        System.Threading.Tasks.Task<WebForm.Service.Lop> TimLopAsync(string maLop);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ThemLop", ReplyAction="http://tempuri.org/IService1/ThemLopResponse")]
         bool ThemLop(string maLop, string tenLop);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ThemLop", ReplyAction="http://tempuri.org/IService1/ThemLopResponse")]
         System.Threading.Tasks.Task<bool> ThemLopAsync(string maLop, string tenLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SuaLop", ReplyAction="http://tempuri.org/IService1/SuaLopResponse")]
+        bool SuaLop(string maLop, string tenLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SuaLop", ReplyAction="http://tempuri.org/IService1/SuaLopResponse")]
+        System.Threading.Tasks.Task<bool> SuaLopAsync(string maLop, string tenLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/XoaLop", ReplyAction="http://tempuri.org/IService1/XoaLopResponse")]
+        bool XoaLop(string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/XoaLop", ReplyAction="http://tempuri.org/IService1/XoaLopResponse")]
+        System.Threading.Tasks.Task<bool> XoaLopAsync(string maLop);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimKiemLop", ReplyAction="http://tempuri.org/IService1/TimKiemLopResponse")]
+        WebForm.Service.Lop[] TimKiemLop(string keyword);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TimKiemLop", ReplyAction="http://tempuri.org/IService1/TimKiemLopResponse")]
+        System.Threading.Tasks.Task<WebForm.Service.Lop[]> TimKiemLopAsync(string keyword);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -126,12 +150,44 @@ namespace WebForm.Service {
             return base.Channel.HienThiLopAsync();
         }
         
+        public WebForm.Service.Lop TimLop(string maLop) {
+            return base.Channel.TimLop(maLop);
+        }
+        
+        public System.Threading.Tasks.Task<WebForm.Service.Lop> TimLopAsync(string maLop) {
+            return base.Channel.TimLopAsync(maLop);
+        }
+        
         public bool ThemLop(string maLop, string tenLop) {
             return base.Channel.ThemLop(maLop, tenLop);
         }
         
         public System.Threading.Tasks.Task<bool> ThemLopAsync(string maLop, string tenLop) {
             return base.Channel.ThemLopAsync(maLop, tenLop);
+        }
+        
+        public bool SuaLop(string maLop, string tenLop) {
+            return base.Channel.SuaLop(maLop, tenLop);
+        }
+        
+        public System.Threading.Tasks.Task<bool> SuaLopAsync(string maLop, string tenLop) {
+            return base.Channel.SuaLopAsync(maLop, tenLop);
+        }
+        
+        public bool XoaLop(string maLop) {
+            return base.Channel.XoaLop(maLop);
+        }
+        
+        public System.Threading.Tasks.Task<bool> XoaLopAsync(string maLop) {
+            return base.Channel.XoaLopAsync(maLop);
+        }
+        
+        public WebForm.Service.Lop[] TimKiemLop(string keyword) {
+            return base.Channel.TimKiemLop(keyword);
+        }
+        
+        public System.Threading.Tasks.Task<WebForm.Service.Lop[]> TimKiemLopAsync(string keyword) {
+            return base.Channel.TimKiemLopAsync(keyword);
         }
     }
 }
