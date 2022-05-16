@@ -8,3 +8,13 @@ D:\19TTA_LQH\BT_020422\Winform\bin\Debug\Winform.pdb
 D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.exe
 D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.pdb
 D:\19TTA_LQH\BT_020422\Winform\obj\Debug\Winform.Main.resources
+A:\New folder\Server-Client\C#\BT_020422\Winform\bin\Debug\Winform.exe.config
+A:\New folder\Server-Client\C#\BT_020422\Winform\bin\Debug\Winform.exe
+A:\New folder\Server-Client\C#\BT_020422\Winform\bin\Debug\Winform.pdb
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.csproj.AssemblyReference.cache
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.Main.resources
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.Properties.Resources.resources
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.csproj.GenerateResource.cache
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.csproj.CoreCompileInputs.cache
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.exe
+A:\New folder\Server-Client\C#\BT_020422\Winform\obj\Debug\Winform.pdb

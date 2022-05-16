@@ -5,3 +5,10 @@ D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.csproj.AssemblyReference
 D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
 D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.dll
 D:\19TTA_LQH\Student-MS\WcfService\obj\Debug\WcfService.pdb
+A:\New folder\Server-Client\C#\Student-MS\WcfService\bin\WcfService.dll.config
+A:\New folder\Server-Client\C#\Student-MS\WcfService\bin\WcfService.dll
+A:\New folder\Server-Client\C#\Student-MS\WcfService\bin\WcfService.pdb
+A:\New folder\Server-Client\C#\Student-MS\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
+A:\New folder\Server-Client\C#\Student-MS\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+A:\New folder\Server-Client\C#\Student-MS\WcfService\obj\Debug\WcfService.dll
+A:\New folder\Server-Client\C#\Student-MS\WcfService\obj\Debug\WcfService.pdb
