@@ -1,0 +1,27 @@
+﻿body {
+    background-color: #F0F0F0;
+}
+
+.header {
+    background: center / cover no-repeat url('/assets/img/banner.jpg');
+    padding: 3rem;
+    text-align: center;
+}
+
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCT_DaoTao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CT_DaoTao" nillable="true" type="tns:CT_DaoTao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCT_DaoTao" nillable="true" type="tns:ArrayOfCT_DaoTao" />
+  <xs:complexType name="CT_DaoTao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MaCTDT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenCTDT" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CT_DaoTao" nillable="true" type="tns:CT_DaoTao" />
+  <xs:complexType name="ArrayOfKhoaHoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KhoaHoc" nillable="true" type="tns:KhoaHoc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKhoaHoc" nillable="true" type="tns:ArrayOfKhoaHoc" />
+  <xs:complexType name="KhoaHoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CT_DaoTao" nillable="true" type="tns:CT_DaoTao" />
+      <xs:element minOccurs="0" name="MaCTDT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenKH" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KhoaHoc" nillable="true" type="tns:KhoaHoc" />
+  <xs:complexType name="ArrayOfLop">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lop" nillable="true" type="tns:Lop" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLop" nillable="true" type="tns:ArrayOfLop" />
+  <xs:complexType name="Lop">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KhoaHoc" nillable="true" type="tns:KhoaHoc" />
+      <xs:element minOccurs="0" name="MaKH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenLop" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lop" nillable="true" type="tns:Lop" />
+  <xs:complexType name="ArrayOfMonHoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MonHoc" nillable="true" type="tns:MonHoc" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMonHoc" nillable="true" type="tns:ArrayOfMonHoc" />
+  <xs:complexType name="MonHoc">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenMH" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MonHoc" nillable="true" type="tns:MonHoc" />
+  <xs:complexType name="ArrayOfSinhVien">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SinhVien" nillable="true" type="tns:SinhVien" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSinhVien" nillable="true" type="tns:ArrayOfSinhVien" />
+  <xs:complexType name="SinhVien">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GioiTinh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HoTen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lop" nillable="true" type="tns:Lop" />
+      <xs:element minOccurs="0" name="MaLop" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NgaySinh" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NoiSinh" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SinhVien" nillable="true" type="tns:SinhVien" />
+  <xs:complexType name="ArrayOfKetQuaThi">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KetQuaThi" nillable="true" type="tns:KetQuaThi" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKetQuaThi" nillable="true" type="tns:ArrayOfKetQuaThi" />
+  <xs:complexType name="KetQuaThi">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiemThi" type="xs:double" />
+      <xs:element minOccurs="0" name="LanThi" type="xs:int" />
+      <xs:element minOccurs="0" name="MaMH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaSV" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MonHoc" nillable="true" type="tns:MonHoc" />
+      <xs:element minOccurs="0" name="SinhVien" nillable="true" type="tns:SinhVien" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KetQuaThi" nillable="true" type="tns:KetQuaThi" />
+</xs:schema>

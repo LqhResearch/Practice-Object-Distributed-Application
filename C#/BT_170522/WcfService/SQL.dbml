@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSV" Class="SQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLSVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CT_DaoTao" Member="CT_DaoTaos">
+    <Type Name="CT_DaoTao">
+      <Column Name="MaCTDT" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenCTDT" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="CT_DaoTao_KhoaHoc" Member="KhoaHocs" AccessModifier="Internal" ThisKey="MaCTDT" OtherKey="MaCTDT" Type="KhoaHoc" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SinhVien" Member="SinhViens">
+    <Type Name="SinhVien">
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="NoiSinh" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="SinhVien_KetQuaThi" Member="KetQuaThis" AccessModifier="Internal" ThisKey="MaSV" OtherKey="MaSV" Type="KetQuaThi" />
+      <Association Name="Lop_SinhVien" Member="Lop" ThisKey="MaLop" OtherKey="MaLop" Type="Lop" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KetQuaThi" Member="KetQuaThis">
+    <Type Name="KetQuaThi">
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaMH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LanThi" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DiemThi" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="SinhVien_KetQuaThi" Member="SinhVien" ThisKey="MaSV" OtherKey="MaSV" Type="SinhVien" IsForeignKey="true" />
+      <Association Name="MonHoc_KetQuaThi" Member="MonHoc" ThisKey="MaMH" OtherKey="MaMH" Type="MonHoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KhoaHoc" Member="KhoaHocs">
+    <Type Name="KhoaHoc">
+      <Column Name="MaKH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaCTDT" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="KhoaHoc_Lop" Member="Lops" AccessModifier="Internal" ThisKey="MaKH" OtherKey="MaKH" Type="Lop" />
+      <Association Name="CT_DaoTao_KhoaHoc" Member="CT_DaoTao" ThisKey="MaCTDT" OtherKey="MaCTDT" Type="CT_DaoTao" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lop" Member="Lops">
+    <Type Name="Lop">
+      <Column Name="MaLop" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaKH" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TenLop" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Lop_SinhVien" Member="SinhViens" AccessModifier="Internal" ThisKey="MaLop" OtherKey="MaLop" Type="SinhVien" />
+      <Association Name="KhoaHoc_Lop" Member="KhoaHoc" ThisKey="MaKH" OtherKey="MaKH" Type="KhoaHoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MonHoc" Member="MonHocs">
+    <Type Name="MonHoc">
+      <Column Name="MaMH" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenMH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="MonHoc_KetQuaThi" Member="KetQuaThis" AccessModifier="Internal" ThisKey="MaMH" OtherKey="MaMH" Type="KetQuaThi" />
+    </Type>
+  </Table>
+</Database>
