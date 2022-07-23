@@ -1,0 +1,14 @@
+D:\Lab230722\WcfService\bin\WcfService.dll.config
+D:\Lab230722\WcfService\bin\WcfService.dll
+D:\Lab230722\WcfService\bin\WcfService.pdb
+D:\Lab230722\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
+D:\Lab230722\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+D:\Lab230722\WcfService\obj\Debug\WcfService.dll
+D:\Lab230722\WcfService\obj\Debug\WcfService.pdb
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\bin\WcfService.dll.config
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\bin\WcfService.dll
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\bin\WcfService.pdb
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\obj\Debug\WcfService.dll
+C:\QH\Practice-Object-Distributed-Application\C#\BT_230722\WcfService\obj\Debug\WcfService.pdb

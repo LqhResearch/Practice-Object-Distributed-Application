@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:55217/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:55217/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfService" />
+  <xs:element name="EvenNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="arr" nillable="true" type="q1:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EvenNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EvenNumberResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployee">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="GetEmployeeResult" nillable="true" type="q2:ArrayOfNHANVIEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maNV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="SearchEmployeeResult" nillable="true" type="q3:NHANVIEN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hoNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenLopNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ngaySinh" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="phai" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="diaChi" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hsLuong" type="xs:decimal" />
+        <xs:element minOccurs="0" name="maNQL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maPhong" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddEmployeeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hoNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenLopNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenNV" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ngaySinh" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="phai" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="diaChi" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hsLuong" type="xs:decimal" />
+        <xs:element minOccurs="0" name="maNQL" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="maPhong" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateEmployeeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEmployee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maNV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteEmployeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteEmployeeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoom">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfService" minOccurs="0" name="GetRoomResult" nillable="true" type="q4:ArrayOfPHONGBAN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

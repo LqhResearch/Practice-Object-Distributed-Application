@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QUANLY_DEAN" Class="SQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-D2G2B8C\LAB3D;Initial Catalog=QUANLY_DEAN;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QUANLY_DEANConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DEAN" Member="DEANs">
+    <Type Name="DEAN">
+      <Column Name="MADA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENDA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIADIEMDA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MAPHONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHONGBAN" Member="PHONGBANs">
+    <Type Name="PHONGBAN">
+      <Column Name="MAPHONG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENPHONG" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="TRUONGPHONG" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="NGAYNHANCHUC" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DIADIEMPHONG" Member="DIADIEMPHONGs">
+    <Type Name="DIADIEMPHONG">
+      <Column Name="MAPHONG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DIADIEM" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="MANV" Type="System.String" DbType="Char(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HONV" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TENLOTNV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="TENNV" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="NGAYSINH" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PHAI" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="DIACHI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HSLUONG" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="MANQL" Type="System.String" DbType="Char(9)" CanBeNull="true" />
+      <Column Name="MAPHONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PHANCONG" Member="PHANCONGs">
+    <Type Name="PHANCONG">
+      <Column Name="MANV" Type="System.String" DbType="Char(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MADA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="THOIGIAN" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

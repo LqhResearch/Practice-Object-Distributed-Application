@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SQL">
+  <DataContextMoniker Name="/SQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="27377e99-0582-433a-971f-9bae05a96cf7" absoluteBounds="0.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SQLDataContext/DEAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c8f7020-426d-4a87-b8cd-42d4f5304a62" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7bd3d8fa-1962-40c0-bd82-b0849acdbef4" absoluteBounds="3.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SQLDataContext/PHONGBAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dded1c6-9129-44ef-a719-e691c806c4a0" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f6377d0c-81d9-446b-983e-0df6bef0fed5" absoluteBounds="0.75, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/SQLDataContext/DIADIEMPHONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90efa5a9-812f-4a67-9528-bd2d00c0b931" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e10b918c-41b8-4921-afd7-6826ce5fec95" absoluteBounds="3.75, 3.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SQLDataContext/NHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad26b23d-e034-4c18-b2d0-7427081fc60c" absoluteBounds="3.765, 4.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e45d283c-a798-4240-a7aa-274353288264" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/SQLDataContext/PHANCONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e83d7b80-d059-4643-9488-55bc86d8b9b7" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
