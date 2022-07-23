@@ -1,3 +1,3 @@
 # Thực hành sáng ngày 23/07/2022
 
-- [Nội dung bài tập](Đề 01.pdf)
+<a href="Đề 01.pdf">Nội dung bài tập</a>
